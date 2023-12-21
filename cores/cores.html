@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        li{
+            padding-left: 5px;
+        }
+        #pre-definida{
+            color: black;
+            background-color: red;
+        }
+
+        #current-color{
+            color: yellow;
+            border: 1px solid currentColor;
+
+        }
+
+        #rgb{
+            background-color: rgb( 40%, 70%, 70%);
+            color: rgb( 255, 170, 170);
+        }
+        #rgba{
+            background-color: rgb(0, 0, 200, 0.4);
+        }
+
+        #hex{
+            color: #9bff95;
+        }
+        #hex-transp{
+            background-color: #ff00ff55;
+        }
+        #hsl{
+            color: hsl( 330, 40%, 70%);
+        }
+        #hsla{
+            background-color: hsla(55, 80%, 60%, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando o CSS. Elas são:</p>
+    <ul>
+        <li id="pre-definida">Cores pré-definidas</li>
+        <li id="current-color">Palavra-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transp">Hexadecimal com transpârencia</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+
+    <h2>HSL</h2>
+
+    <code>hsl(hue, saturation, lightness)</code>
+    <ul>
+        <li><strong>Hue (matriz):</strong> é o grau na roda de cores (de 0 a 360 graus)</li>
+        <ul>
+            <li>0 ou 360 é vermelho</li>
+            <li>120 é verde</li>
+            <li>240 é azul</li>
+        </ul>
+        <li><strong>Saturation (saturação):</strong> valor percentual</li>
+        <ul>
+            <li>0% um tom de cinza</li>
+            <li>100% cor total</li>
+        </ul>
+        <li><strong>Lightness (luminosidade):</strong> luminosidade da cor</li>
+        <ul>
+            <li>0% é preto</li>
+            <li>100% é branco</li>
+        </ul>
+    </ul>
+    
+</body>
+</html>
