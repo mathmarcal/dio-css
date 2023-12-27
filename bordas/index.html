@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .exemplo{
+            width: 200px;
+            height: 100px;
+            background-color: black;
+            background-clip: padding-box;
+
+            border: 5px solid purple;
+            border-radius: 30px 0px 30px 0px;
+        }
+        .ex-02{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            margin: 50px auto;
+            border: 20px solid;
+        }
+
+        #exemplo-01{
+            /*border-image-source: url("https://png.pngtree.com/png-clipart/20230405/original/pngtree-set-of-colorful-stars-vector-illustration-png-image_9028213.png");*/
+            border-image-source: url("https://static.vecteezy.com/system/resources/previews/012/085/559/non_2x/black-mandala-ornament-frame-border-free-png.png");
+            border-image-slice: 400;
+            border-image-width: 50px;
+            border-image-repeat: round;
+            border-image-outset: 0 10px;
+            background-color: lightgray;
+        }
+        #exemplo-02{
+            border-image: url("https://png.pngtree.com/png-clipart/20220615/original/pngtree-golden-border-frame-png-png-image_8057051.png") 225 / 55px / 15px 46px stretch ;
+
+            
+        }
+        #exemplo-03{
+            border-image-source: linear-gradient(purple, violet
+            );
+            border-image-slice: 20;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li><code>border-width</code></li>
+        <li><code>boder-style</code></li>
+        <li><code>border-color</code></li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="exemplo">
+    </div>
+
+    <h1>Bordas com imagens</h1>
+    <ul>
+        <li><code>border-image-source</code></li>
+        <li><code>border-image-width</code></li>
+        <li><code>border-image-repeat</code></li>
+        <li><code>border-image-outset</code></li>
+        <li><code>border-image-slice</code></li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="ex-02" id="exemplo-01">
+    </div>
+    <div class="ex-02" id="exemplo-02"></div>
+    <div class="ex-02" id="exemplo-03"></div>
+
+    
+    
+</body>
+</html>
