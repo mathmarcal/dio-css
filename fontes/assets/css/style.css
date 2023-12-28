@@ -1,0 +1,9 @@
+@import url(./global.css);
+
+* {
+    font-family: Roboto;
+}
+
+h1{
+    font-family: 'Nova Mono', monospace;
+}
