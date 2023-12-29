@@ -1,0 +1,81 @@
+#transform{
+    text-transform: uppercase;
+}
+#align p{
+    background-color: lightgray;
+    padding-left: 10px;
+    text-align: center;
+}
+#align #ex-01{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    width: 370px;
+    text-align: right;
+}
+
+#decoration a{
+    text-decoration: underline double orange 3px;
+}
+
+#decoration #line{
+    text-decoration-line: overline;
+}
+#decoration #style{
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+}
+#decoration #color{
+    color: blue;
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+#decoration #thickness{
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+}
+
+#indent{
+    text-indent: 50px;
+}
+
+#letter{
+    letter-spacing: 10px;
+}
+#word{
+    word-spacing: 20px;
+}
+
+.ex-02{
+    background-color: lightgreen;
+    width: 200px;
+}
+.ex-02 span{
+    background-color: green;
+    color: white;
+}
+#nowrap{
+    white-space: nowrap;
+}
+#pre{
+    white-space: pre;
+}
+#pre-line{
+    white-space: pre-line;
+}
+#pre-warp{
+    white-space: pre-wrap;
+}
+#break-spaces{
+    white-space: break-spaces;
+}
+
+.ex-03{
+    background-color: purple;
+    color: black;
+    width: 100px;
+}
+#break-word{
+    word-wrap: break-word;
+}
