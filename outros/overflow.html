@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .exemplo{
+            background-color: orange;
+            border: 2px solid purple;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+        #hidden{
+            overflow: hidden;
+        }
+        #scroll{
+            overflow: scroll;
+        }
+        #auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>overflow</code></h1>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container.</p>
+    <p><em>Exemplo:</em></p>
+
+    <code>overflow: visible;</code>
+    <div class="exemplo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore sint optio odit, in numquam mollitia ut. Repudiandae ipsum suscipit distinctio eius tempore corrupti, dolor nostrum aspernatur voluptatum atque. Eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore quasi minima unde saepe? Dolor explicabo, provident laudantium id vel eaque officia fugit possimus quia porro aperiam facilis ratione minus.</p>
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore sint optio odit, in numquam mollitia ut. Repudiandae ipsum suscipit distinctio eius tempore corrupti, dolor nostrum aspernatur voluptatum atque. Eveniet?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore quasi minima unde saepe? Dolor explicabo, provident laudantium id vel eaque officia fugit possimus quia porro aperiam facilis ratione minus.</p>
+    </div>
+    <br><br>
+    
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore sint optio odit, in numquam mollitia ut. Repudiandae ipsum suscipit distinctio eius tempore corrupti, dolor nostrum aspernatur voluptatum atque. Eveniet?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore quasi minima unde saepe? Dolor explicabo, provident laudantium id vel eaque officia fugit possimus quia porro aperiam facilis ratione minus.</p>
+    </div>
+    <br><br>
+
+    <code>overflow: auto;</code>
+    <div id="auto" class="exemplo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore sint optio odit, in numquam mollitia ut. Repudiandae ipsum suscipit distinctio eius tempore corrupti, dolor nostrum aspernatur voluptatum atque. Eveniet?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore quasi minima unde saepe? Dolor explicabo, provident laudantium id vel eaque officia fugit possimus quia porro aperiam facilis ratione minus.</p>
+    </div>
+</body>
+</html>
