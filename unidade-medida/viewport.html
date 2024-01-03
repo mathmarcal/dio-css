@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+        .exemplo-01{
+            background-color: yellow;
+            width: 50%;
+        }
+        .exemplo-02{
+            background-color: lightcoral;
+            width: 50vw;
+        }
+        .exemplo-03{
+            background-color: aqua;
+            width: 50vh;
+        }
+        #box{
+            border: 5px solid black;
+            width: 40%;
+        }
+    </style>
+    <title>Viewports</title>
+</head>
+<body>
+    <h1>Unidade de medida vw/vh/vmin/vmax</h1>
+
+    <div class="exemplo-01">width: 50%; </div>
+    <div class="exemplo-02">width: 50vw; </div>
+    <div class="exemplo-03">width: 50vh; </div>
+
+    <hr>
+
+    <div id="box">
+        <div class="exemplo-01">width: 50%; </div>
+        <div class="exemplo-02">width: 50vw; </div>
+        <div class="exemplo-03">width: 50vh; </div> 
+    </div>
+
+    <hr>
+
+    <div class="exemplo-01" style="width: 10vmin;"> width: 10vmin; </div>
+    <div class="exemplo-02" style="width: 10vmax;"> width: 10vmax; </div>
+    
+</body>
+</html>
