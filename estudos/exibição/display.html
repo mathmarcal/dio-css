@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .exemplo-01{
+            background-color: lightblue;
+        }
+
+        nav{
+            background-color: black;
+            color: purple;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+            margin: 0px 20px;
+            
+        }
+        nav li a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: purple;
+            text-align: center;
+            width: 100px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        nav li a:hover{
+            color: purple;
+            background-color: white;
+        }
+    </style>
+    <title>Display</title>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+    <ul>
+        <li>border-width</li>
+        <li>boredr-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <code>display: block;</code>
+    <br><br>
+    <div class="exemplo-01">Exemplo Bloco 01</div>
+    <p class="exemplo-01">Exemplo Bloco 02</p>
+    <br>
+    <br>
+    <code>display: inline;</code>
+    <br><br>
+    <span class="exemplo-01">Exemplo Inline 02</span>
+    <span class="exemplo-01">Exemplo Inline 02</span>
+    <p>Com a tag inline não é possivel fazer espaçamento por exemplo: width, height, margin, padding, etc...</p>
+    <br>
+    <br>
+    <code>display: inline-block;</code>
+    <br><br>
+    <span class="exemplo-01" style=" display:inline-block; width: 200px; height: 200px;">Exemplo Inline-Block 01</span>
+    <span class="exemplo-01" style="display: inline-block; padding: 10px; margin: 10px;">Exemplo Inline-Block 02</span>
+    <span class="exemplo-01" style=" display:inline-block; width: 200px; height: 200px;">Exemplo Inline-Block 01</span>
+    <span class="exemplo-01" style="display: inline-block; padding: 10px; margin: 10px;">Exemplo Inline-Block 02</span>
+
+    <p>Com a tag inline-block já é possivel fazer esses espaçamento em tag inline (tags que ocupam a mesma linha).</p>
+
+    <h2>Menu NAV - Exemplo</h2>
+    <nav>
+        <ul>
+            <li><a href="">Link 01</a></li>
+            <li><a href="">Link 02</a></li>
+            <li><a href="">Link 03</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+    <code>display: none;</code>
+    <br><br>
+    <div class="exemplo-01" style="display: none;">Exemplo Display None</div>
+</body>
+</html>
