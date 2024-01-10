@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 24px;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+}
+.menu .right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu .center #search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+.menu .center #search #textBusca{
+    border: none;
+}
+.menu .center #search #btnBuscar{
+    border-left: 1px solid #CCCCCC;
+    width: 100%;
+    background-color: #CCCCCC;
+}
+.menu .left{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu  .left  #perfil{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.conteudo{
+    display: flex;
+    background-color: #F9F9F9;
+    flex-flow: row nowrap;
+    align-content: center;
+    gap: 16px;
+    flex: 1 1 auto;
+    padding: 30px 0px 0px 50px;
+}
+.conteudo #principal{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+.conteudo #principal #video-principal h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+}
+.conteudo #principal .info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 42px;
+
+}
+.conteudo #principal .info #info-canal{
+    display: flex;
+    gap: 12px;
+}
+.conteudo #principal .info #info-canal h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.conteudo #principal .info #info-canal p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.conteudo .info button{
+    background-color: #CC0000;
+    height: 100%;
+    width: 150px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.conteudo .info .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+.conteudo #principal #visualizacao{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;   
+}
+.conteudo #principal #descricao{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    white-space: pre-line;
+    color: #515151;
+}
+.conteudo .secundario{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+.conteudo .secundario .video-02{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+}
+.conteudo .secundario img{
+    width: 160px;
+    height: 90px;
+}
+
+.secundario #dados-02 h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;  
+    margin-bottom: 5px;
+}
+.secundario #dados-02 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px; 
+    margin-bottom: 5px;
+    color: #515151;
+}
