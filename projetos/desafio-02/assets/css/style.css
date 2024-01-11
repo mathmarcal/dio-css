@@ -27,14 +27,24 @@ body{
     display: flex;
     align-items: center;
     border: 1px solid #CCCCCC;
+    width: 250px;
+    height: 30px;
+    position: relative;
+    border-radius: 3px;
 }
 .menu .center #search #textBusca{
     border: none;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 87%;
+    height: 100%;
 }
 .menu .center #search #btnBuscar{
     border-left: 1px solid #CCCCCC;
-    width: 100%;
+    height: 30px;
     background-color: #CCCCCC;
+    position: absolute;
+    right: 0px;
 }
 .menu .left{
     display: flex;

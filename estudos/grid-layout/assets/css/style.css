@@ -1,0 +1,34 @@
+.container{
+    border: 1px solid black;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px)
+    /*
+    Para usar a unidade de medida "fr" é necessario
+    ter um width ou height definido 
+    */
+}
+.item{
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.item-01{
+    background-color: darkslateblue;
+}
+.item-02{
+    background-color: lightcoral;
+}
+.item-03{
+    background-color: yellow;
+}
+.item-04{
+    background-color: blueviolet;
+}
+.item-05{
+    background-color: darkgreen;
+}
+.item-06{
+    background-color: orange;
+}
