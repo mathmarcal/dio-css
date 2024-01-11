@@ -5,13 +5,16 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: #F9F9F9;
+}
 .menu{
+    background-color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 5px 24px;
-    flex: 1 1 auto;
     box-sizing: border-box;
 }
 .menu .right{
@@ -20,7 +23,6 @@
     align-items: center;
     gap: 30px;
 }
-
 .menu .center #search{
     display: flex;
     align-items: center;
@@ -39,6 +41,8 @@
     gap: 25px;
     justify-content: space-between;
     align-items: center;
+    flex: 0 1 auto;
+
 }
 .menu  .left  #perfil{
     width: 34px;
@@ -48,12 +52,10 @@
 
 .conteudo{
     display: flex;
-    background-color: #F9F9F9;
     flex-flow: row nowrap;
-    align-content: center;
-    gap: 16px;
-    flex: 1 1 auto;
+    justify-content: center;
     padding: 30px 0px 0px 50px;
+    gap: 16px;
 }
 .conteudo #principal{
     display: flex;
@@ -124,6 +126,7 @@
 .conteudo .secundario{
     display: flex;
     flex-flow: column nowrap;
+    flex: 1 1 auto;
     gap: 16px;
 }
 .conteudo .secundario .video-02{
