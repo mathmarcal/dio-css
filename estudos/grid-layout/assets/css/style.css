@@ -4,13 +4,19 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px)
+    grid-template-rows: repeat(2, 150px);
     /*
     Para usar a unidade de medida "fr" é necessario
     ter um width ou height definido 
     */
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 
-
+}
+.exemplo-01{
+    grid-template-columns:  repeat(3, minmax(150px, 100%));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(150px, 100%);
 }
 .item{
     background-color: lightblue;
@@ -33,4 +39,65 @@
 }
 .item-06{
     background-color: orange;
+}
+
+/*Posicionamento dos Grid*/
+.position{
+    border: 1px solid black;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+#item-a{
+    background-color: rgb(249, 180, 51);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+#item-b{
+    background-color: skyblue;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+
+    grid-column: 1 / span 3;
+    /*grid-column-start: 1;
+    grid-column-end: span 3;*/
+
+
+    grid-row: 2 / span 2;
+    /*grid-row-start: 2;
+    grid-row-end: span 2;*/
+    /** span significa a quantidade de celulas que irá ocupar**/
+}
+
+.position-ex-01{
+    background-color: palevioletred;
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+.item-ex{
+    border: 1px solid blue;
+}
+
+#item-ex01{
+    background-color: aquamarine;
+    border: 1px solid blue;
+
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
 }
