@@ -98,6 +98,39 @@
     background-color: aquamarine;
     border: 1px solid blue;
 
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    /*grid-column: 3 / span 1;
+    grid-row: 2 / span 1;*/
+
+    grid-area: 2 / 3 / span 1 / span 1;
+    /* grid-area: grid-row-strat / grid-column-start / grid-row-end / grid-column-end; */
+}
+
+.grid-area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    gap: 20px;
+    text-align: center;
+}
+header{
+    background-color: orange;
+    grid-area: header;
+}
+main{
+    background-color: skyblue;
+    grid-area: main;
+}
+aside{
+    background-color: pink;
+    grid-area: sidebar;
+   
+}
+footer{
+    background-color: lightgreen;
+    grid-area: footer;
+
 }
