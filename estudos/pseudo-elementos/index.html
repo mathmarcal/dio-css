@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code{
+            background-color: lightgray;
+        }
+        #first-letter > p::first-letter{
+            color: green;
+            margin-right: 2px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        /*Se colocar somente ::first-letter sem nenhuma tag antes,
+        esse pseudo-elemento irá adicionar a configurações (da primeira letra) em todas as tags*/
+        #first-line > p::first-line{
+            color: blue;
+            background-color: lightblue;
+            font-weight: 600;
+            text-transform: uppercase;
+
+        }
+        #marker summary::marker {
+            color: green;
+        }
+        #marker li::marker{
+            color: yellow;
+    
+        }
+        #placeholder input::placeholder{
+            color: lightgreen;
+        }
+        #selection ::selection{
+            background-color: lightcyan;
+            color: blue;
+        }
+        #selector-button input::file-selector-button{
+            background-color: green;
+            border: 1px solid black;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+    <title>Pseudo-elementos</title>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <div id="first-letter">
+        <p>Usado para adicionar elementos extras na página, sem a necessidada de declara-lo no HTML, ou para selecionar uma pate de algum elemento.</p>
+        <p>Identificar por <code>::palavra-chave</code></p>
+        <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+        <p>Seleciona a primeira letra da primeira linha</p>
+        
+        <p>Propriedades disponíveis:</p>
+        <ul>
+            <li><code>color</code></li>
+            <li><code>background</code></li>
+            <li><code>margin</code></li>
+            <li><code>padding</code></li>
+            <li><code>border</code></li>
+            <li><code>font</code></li>
+            <li>Propriedades de texto</li>
+        </ul>
+    </div>
+    <div id="first-line">
+        <h2>Pseudo-elemento - <code>first-line</code></h2>
+        <p>Seleciona a primeira linha de um texto</p>
+        <p>Propriedades disponíveis: </p>
+        <ul>
+            <li><code>color</code></li>
+            <li><code>background</code></li>
+            <li><code>font</code></li>
+            <li>Propriedades de texto</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum aspernatur nihil libero repellat. Commodi, reiciendis iste sint iure voluptas libero nesciunt earum, voluptatum nemo amet autem praesentium ad molestias.</p>
+    </div>
+    <div id="backdrop">
+        <h2>Pseudo-elemento - <code>::backdrop</code></h2>
+        <p>Estiliza plano de fundo de elementos em modo de tela cheia, como <code>dialog</code> ou <code>video</code></p>
+
+    </div>
+    <div id="marker">
+        <h2>Pseudo-elemento - <code>::marker</code></h2>
+        <p>Permite estilizar os tópicos ou numeros de uma lista (<code>li</code>) ou então a flecha de um elemento <code>summary</code></p>
+        <details>
+            <summary>Propriedades aceitas: </summary>
+        </details>
+        <ul>
+            <li><code>color</code></li>
+            <li><code>content</code></li>
+            <li><code>white-space</code></li>
+            <li><code>font</code></li>
+            <li><code>animation</code></li>
+            <li><code>transition</code></li>
+        </ul>
+    </div>
+    <div id="placeholder">
+        <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+        <p>Um placeholder é uma dica para ajudar no preenchimento de algum campo de formulário.</p>
+        <p>Propriedades aceitas: </p>
+        <ul>
+            <li><code>color</code></li>
+            <li><code>font</code></li>
+            <li><code>background</code></li>
+            <li><code>text</code></li>
+        </ul>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" placeholder="Ex. Maria Souza Alves">
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" placeholder="Minimo de 10 caracteres">
+    </div>
+    <div id="selection">
+        <h2>Pseudo-elemento - <code>::section</code></h2>
+        <p>Permite estilizar a seleção de texto no navegador</p>
+        <p>Propriedades aceitas: </p>
+        <ul>
+            <li><code>color</code></li>
+            <li><code>background-color</code></li>
+            <li><code>text</code></li>
+        </ul>
+        <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, dignissimos illum? Voluptas adipisci dolore voluptatum suscipit nesciunt enim, nihil accusantium repellendus voluptate odio tempora ex aut facere incidunt fuga beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga consectetur architecto sapiente quasi voluptate quod asperiores, adipisci quia libero aperiam exercitationem minus esse deserunt unde possimus repudiandae corporis pariatur?</p>
+    </div>
+    <div id="selector-button">
+        <h2>Pseudo-elemento - <code>::file-selector-button</code></h2>
+        <p>Permite estlizar a seleção de textos no navegador</p>
+        <form>
+            <label for="fileUpload">Fazer o Upload de arquivos</label>
+            <input type="file" name="fileUpload">
+        </form>
+
+    </div>
+</body>
+</html>

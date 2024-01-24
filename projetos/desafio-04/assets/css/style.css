@@ -77,10 +77,7 @@ header p{
 }
 
 
-main{
-    max-width: 1200px;
-    margin: auto;
-}
+
 img{
     max-width: 100%;
     object-fit: cover;
@@ -122,6 +119,9 @@ section p{
     font-size: 2rem;
 }
 @media screen and (min-width: 720px) {
+    main{
+        margin: auto;
+    }
     main section{
         flex-direction: row;
         align-items: center;
@@ -132,8 +132,8 @@ section p{
         line-height: 54px;
     }
     section img{
-        flex-basis: 500px;
-        object-fit: contain;
+        flex-basis: 100px;
+        object-fit: scale-down;
     }
     section .details{
         flex-basis: 1;
