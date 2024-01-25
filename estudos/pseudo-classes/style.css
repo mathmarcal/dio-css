@@ -1,0 +1,56 @@
+button{
+    font-weight: 600;
+    background-color: black;
+    color: purple;
+    border: 1px solid purple;
+    padding: 8px 15px;
+}
+#hover button:hover{
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#exemplo-01{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+#hover #exemplo-01:hover{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYRiawAXaNdcxNmajsSLwWEY2hnvfP9cI4g&usqp=CAU');
+    background-size: cover;
+}
+
+#active button:active{
+    background-color: green;
+    color: black;
+    border: 1px solid black;
+}
+
+#active p:active{
+    background-color: lightgreen;
+}
+
+#focus label{
+    display: block;
+    margin: 12px;
+}
+
+#focus input:focus{
+    outline: 2px dashed red;
+}
+
+#focus select:focus{
+    background-color: lightgreen;
+}
+#focus label:focus-within{
+    font-weight: bold;
+}
+
+#target p:target{
+    background-color: lightgreen;
+}

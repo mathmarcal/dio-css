@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo-elementos - Before e After</title>
     <style>
         .card-image{
-            width: 300px;
-            height: 300px;
-            border: 1px solid gray;
-            border-radius: 30px;
-            background: url('https://intentos.com.br/wp-content/uploads/2020/06/o-que-e-fotografia-de-paisagem-1024x666.jpeg') no-repeat;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: url('https://http2.mlstatic.com/D_NQ_NP_759794-MLB45520556713_042021-O.webp') no-repeat;
             background-size: cover;
             position: relative;
             overflow: hidden;
-
         }
-
         .card-image::before{
             content: "";
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.64));
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
         }
     </style>
+    <title>Pseudo-elementos - Before / After</title>
 </head>
 <body>
     <div class="card-image">
