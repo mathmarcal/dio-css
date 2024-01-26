@@ -59,6 +59,115 @@
 
         <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat ipsam voluptate ducimus error laboriosam, quidem dicta excepturi! Sequi nihil quam voluptates sapiente quaerat? Architecto, maiores a? Dolorem, iste error.</p>
     </div>
-    
+    <div id="enabled-disabled">
+        <h2>Pseudo-classes | :enabled e :disabled</h2>
+        
+        <button enabled>Botão Habilitado</button>
+        <button disabled>Botão Desabilitado</button>
+    </div>
+    <div id="placeholder-shown">
+        <h2>Pseudo-classes | :placeholder-shown</h2>
+        <form>
+            <label for="name">
+                Nome completo: 
+                <input type="text" placeholder="">
+            </label>
+            <label for="emmail">
+                E-mail:
+                <input type="email" placeholder="name@exemple.com">
+            </label>
+            <label for="idade">
+                Idade:
+                <input type="number" value="18" min="18" placeholder="Você deve ter mais de 18 anos">
+            </label>
+        </form>
+    </div>
+    <div id="checked">
+        <h2>Pseudo-classes | :checked e :indeterminate</h2>
+        <div>
+            <input type="checkbox" name="task01">
+            <label for="task01">Tarefa 01</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task02">
+            <label for="task02">Tarefa 02</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task03">
+            <label for="task03">Tarefa 03</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task04">
+            <label for="task04">Tarefa 04</label>
+        </div>
+        <div>
+            <input type="checkbox" name="task05">
+            <label for="task05">Tarefa 05</label>
+        </div>
+        <hr>
+            <input type="radio" name="sexo">
+            <label for="sexo">Masculino</label>
+            <input type="radio" name="sexo">
+            <label for="sexo">Feminino</label>
+            <input type="radio" name="sexo">
+            <label for="sexo">Desejo não informar!</label>
+        <hr>
+        <label>Sabor: </label>
+        <select name="sabor">
+            <option value="morango">Morango</option>
+            <option value="creme">Creme</option>
+            <option value="chocolate">Chocolate</option>
+        </select>
+    </div>
+    <div id="valid">
+        <h2>Pseudo-classes: </h2>
+        <label for="invalid">
+            <input type="checkbox" name="invalid">
+            :invalid <!--Vai ser feita a configuração quando o valor estabelicido no input for invalido-->
+        </label>
+        <label for="valid">
+            <input type="checkbox" name="valid">
+            :valid <!--Vai ser feita a configuração quando o valor estabelicido no input for valido-->
+        </label>
+        <label for="in-range">
+            <input type="checkbox" name="in-range">
+            :in-range <!--Vai fazer a configuração quando o usuario dar o valor estabelecido no min e max do input-->
+        </label>
+        <label for="out-of-range">
+            <input type="checkbox" name="out-of-range">
+            :out-of-range <!--Vai fazer a configuração quando o usuario estiver dando o valor que esta fora do min e max do input-->
+        </label>
+
+        <hr>
+
+        <form>
+            <h3>Faça sua compra: </h3>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" required>
+            <span class="error">E-mail Invalido</span>
+           
+            <label for="codigo">Código Produto: </label>
+            <input type="number" name="codigo" min="1000" step="100">
+            <span class="error">Código Invalido</span>
+           
+            <label for="cupom">Cupom de Desconto: </label>
+            <input type="text" name="cupom" placeholder="Apenas letras maiusculas" pattern="[A-Z]+">
+            <span class="error">Cupom Invalida</span>
+           
+            <label for="data">Data de Nascimento: </label>
+            <input type="date" name="data" min="1962-01-01" max="2006-12-31">
+            <span class="error">Data de Nascimento Invalida</span>
+           
+            <label for="quantidade">Quantidade: </label>
+            <input type="number" name="quantidade" min="3" max="10">
+            <span class="error">Quantidade Invalida</span>
+
+            <label for="">
+                <input type="checkbox" required>
+                <span>Li e aceito os termos de uso</span>
+            </label>
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
 </body>
 </html>

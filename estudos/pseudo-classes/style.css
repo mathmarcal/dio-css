@@ -54,3 +54,81 @@ button{
 #target p:target{
     background-color: lightgreen;
 }
+
+#enabled-disabled button:enabled{
+    background-color: blue;
+    color: yellow;
+}
+#enabled-disabled button:disabled{
+    background-color: green;
+    color: black;
+    opacity: .5;
+}
+#placeholder-shown label{
+    display: block;
+    margin: 12px;
+}
+
+#placeholder-shown input:placeholder-shown{
+    border: 1px solid green;
+    background-color: lightblue;
+}
+
+#checked input{
+    accent-color: green;
+}
+
+#checked input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+}
+
+#checked input[type="radio"]{
+    accent-color: purple;
+}
+#checked input[type="radio"]:checked + label{
+    color: green;
+    font-weight: bold;
+}
+#checked option:checked{
+    color: green;
+    background-color: lightgreen;
+}
+
+#valid > label{
+    display: block;
+}
+#valid > form{
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    width: 300px;
+    padding: 20px;
+
+    margin: auto;
+}
+#valid > form label{
+    display: block;
+    margin-bottom: 5px;
+}
+#valid > form input{
+    margin-bottom: 20px;
+    padding: 5px 8px;
+}
+
+#valid input:valid, input:in-range{
+    border: 1px solid green;
+    color: green;
+}
+#valid input:invalid, input:out-of-range{
+    border: 1px solid red;
+    color: red;
+}
+
+#valid .error{
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+
+#valid input:invalid + .error{
+    display: inline;
+}
