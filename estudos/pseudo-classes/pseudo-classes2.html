@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-classes</title>
+</head>
+<body>
+    <div id="nth">
+        <h2>Pseudo-classes: </h2>
+        <label>
+            <input type="checkbox">
+            :nth-child
+        </label>
+        <label>
+            <input type="checkbox">
+            :nth-of-type
+        </label>
+        <hr>
+        <article>
+            <p class="exemplo">Ia the first paragraph</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet a officia quisquam, et possimus molestias aliquid eos, temporibus numquam sit aliquam dicta ipsa corporis. Impedit illo officia quidem adipisci odio.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in quidem nisi, vero blanditiis rem maiores facere tempore quis unde aut repudiandae quasi aspernatur similique sapiente necessitatibus laboriosam obcaecati commodi!</p>
+            <p class="exemplo">I am the last pararaph</p>
+        </article>
+
+        <hr>
+
+        <div class="listas">
+            <ul id="lista-01">
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+                <li>Item 04</li>
+                <li>Item 05</li>
+                <li>Item 06</li>
+                <li>Item 07</li>
+                <li>Item 08</li>
+                <li>Item 09</li>
+                <li>Item 10</li>
+            </ul>
+
+            <ul id="lista-02">
+                <li>Categoria 01</li>
+                <li>Categoria 02</li>
+                <li>Categoria 03</li>
+                <li>Categoria 04</li>
+                <li>Categoria 05</li>
+                <li>Categoria 06</li>
+                <li>Categoria 07</li>
+                <li>Categoria 08</li>
+                <li>Categoria 09</li>
+                <li>Categoria 10</li>
+            </ul>
+        </div>
+    </div>
+    <div id="empty">
+        <h2>Pseudo-classes:</h2>
+        <label>
+            <input type="checkbox">
+            :empty
+        </label>
+        
+        <hr>
+
+        <p>Elemento sem conteúdo: </p>
+        <div></div>
+
+        <p>Elemento com conteúdo: </p>
+        <div>
+            <!--Simple Coment-->
+        </div>
+
+        <p>Elemento com espaço em branco: </p>
+        <div> </div>
+
+        <p>Elemento com elemento vazio dentro dele:</p>
+        <div>
+            <p></p>
+        </div>
+
+        <p>Elemento com propridade content: </p>
+        <div id="elemento-content"></div>
+    </div>
+
+    <div id="is">
+        <h2>Pseudo-classes:</h2>
+        <label>
+            <input type="checkbox">
+            :is
+        </label>
+        <label>
+            <input type="checkbox">
+            :where
+        </label>
+    </div>
+
+    <hr>
+
+    <article class="post">
+        <h2>Meu post</h2>
+        <p>Sumário: </p>
+        <ul>
+            <li>Capítulo 01</li>
+            <li>Capítulo 02</li>
+            <li>Capítulo 03</li>
+            <li>Capítulo 04</li>
+        </ul>
+
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus hic at aliquid dolores eveniet asperiores quo assumenda repudiandae esse obcaecati suscipit quae dignissimos, rem illum magnam a debitis cum.</p>
+        <p class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, obcaecati! In, itaque commodi. Dolor iusto sint non, sed odio dolorum cumque? Odit voluptatum eum consectetur rem, sequi quo tempore quasi.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, totam corporis! Explicabo assumenda et quae iure consequatur laudantium est error, suscipit, pariatur neque blanditiis? Hic et voluptatum dolore quo rem!</p>
+
+        <hr>
+    </article>
+    
+    <section>
+        <p>Exemplo 1</p>
+    </section>
+
+    <article class="teste">
+        <p>Exemplo 2</p>
+    </article>
+
+    <aside>
+        <p>Exemplo 3</p>
+    </aside>
+    
+    <nav>
+        <p>Exemplo 4</p>
+    </nav>
+</body>
+</html>

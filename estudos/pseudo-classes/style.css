@@ -114,11 +114,11 @@ button{
     padding: 5px 8px;
 }
 
-#valid input:valid, input:in-range{
+#valid  input:valid, input:in-range{
     border: 1px solid green;
     color: green;
 }
-#valid input:invalid, input:out-of-range{
+#valid  input:invalid, input:out-of-range{
     border: 1px solid red;
     color: red;
 }
@@ -131,4 +131,86 @@ button{
 
 #valid input:invalid + .error{
     display: inline;
+}
+
+#required label{
+    display: block;
+}
+
+#required > #exemplo-02{
+    width: 300px;
+    border: 1px solid gray;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 24px;
+
+}
+#required > form > input,button{
+    margin: 12px 0px;
+}
+
+#required > form > input:required{
+    border: 1px solid blue;
+}
+#required > form > input:optional{
+    border: 1px solid pink;
+}
+
+#autofill > label{
+    display: block;
+}
+#autofill > form{
+    margin: auto;
+    width: 300px;
+    border: 1px solid gray;
+    background-color: rgba(211, 211, 211, 0.571);
+    padding: 12px;
+}
+#autofill > form input{
+    margin-bottom: 12px;
+}
+
+#autofill > form label,button{
+    display: block;
+}
+
+#autofil > form input:-webkit-autofill{
+    border: 2px solid green;
+}
+
+#nth label{
+    display: block;
+}
+
+#nth > article p:nth-child(4){
+    color: blue;
+}
+
+#nth > .listas #lista-01 li:nth-child(4n){
+    color: red;
+}
+
+#nth > .listas #lista-02 li:nth-child(3n+1){
+    color: red;
+}
+
+#empty > div{
+    height: 16px;
+    background-color: lightgreen;
+}
+
+#empty #elemento-content::before{
+    content: "!!!!!!!!!!!";
+}
+
+#empty div:empty{
+    border: 2px solid blue;
+}
+
+.post :is(h2, li, .red){
+    color: red;
+}
+
+:is(section, .teste, aside, nav) p{
+    background-color: lightblue;
 }

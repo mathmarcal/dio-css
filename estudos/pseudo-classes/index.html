@@ -169,5 +169,59 @@
             <button type="submit">Comprar</button>
         </form>
     </div>
+    <hr>
+    <div id="required">
+        <h2>Pseudo-classes</h2>
+        <label>
+            <input type="checkbox">
+            :required
+        </label>
+        <label>
+            <input type="checkbox">
+            :optional
+        </label>
+        <hr>
+        <form id="exemplo-02">
+            <h3>Faça a sua compra !</h3>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required>
+            <label for="codigo">Código do Produto: </label>
+            <input type="number" name="codigo" min="1000" max="3000" required>
+            <label for="cupom">Cupom de Desconto: </label>
+            <input type="text" name="cupom" pattern="[a-z]+" placeholder="Apenas letras minúsculas">
+            <label for="date">Data de Nascimento: </label>
+            <input type="date" name="date" min="1962-01-01" max="2004-12-31" required>
+            <label for="quantidade">Quantidade: </label>
+            <input type="number" name="quantidade" min="3" max="10">
+
+            <label>
+                <input type="checkbox" name="" required>
+                Li e aceito os termos de uso
+            </label>
+            <button>Finalizar Compra</button>
+        </form>
+    </div>
+    <hr>
+    <div id="autofill">
+        <h2>Pseudo-classes</h2>
+        <label>
+            <input type="checkbox">
+            :autofill
+        </label>
+        <label>
+            <input type="checkbox">
+            :-webkit-autofill
+        </label>
+        <hr>
+        <form>
+            <h3>Login</h3>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
