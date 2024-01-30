@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .translate{
+            height: 300px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        .translate .box:hover{
+            transform: translate(-100px, 50px);
+        }
+
+        .rotate{
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        .rotate > .box{
+            border-radius: 8px;
+            text-align: center;
+        }
+
+
+        .rotate > .box:hover{
+            transform: rotate(30deg);
+        }
+
+        .rotate .box:nth-child(1):hover{
+            transform: rotateX(30deg);
+        } 
+        .rotate .box:nth-child(3):hover{
+            transform: rotateY(30deg);
+        }
+
+        .scale{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        .scale .box:hover{
+            transform: scale(2);
+        }
+
+        .skew{
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        .skew > .box{
+            border-radius: 8px;
+        }
+        .skew .box:hover{
+            transform: skew(20deg, 10deg);
+        }
+        .skew .box:nth-child(1):hover{
+            transform: skewX(20deg);
+        }
+        .skew .box:nth-child(3):hover{
+            transform: SkewY(20deg);
+        }
+    </style>
+    <title>Transformações 2D</title>
+</head>
+<body>
+    <h2>Translate</h2>
+    <div class="translate">
+        <div class="box"></div>
+    </div>
+    <h2>Rotate</h2>
+    <div class="rotate">
+        <div class="box">Rotatex - 30deg</div>
+        <div class="box">Rotate - 30deg</div>
+        <div class="box">RotateY - 30deg</div>
+    </div>
+    <h2>Scale</h2>
+    <div class="scale">
+        <div class="box"></div>
+    </div>
+    <h2>Skew</h2>
+    <div class="skew">
+        <div class="box">SkewX - 20deg</div>
+        <div class="box">Skew - (20deg, 10deg)</div>
+        <div class="box">SkewY - 20deg</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .perspectiva{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid black;
+
+            perspective: 200px;
+            perspective-origin: right bottom ;
+        }
+
+        .perspectiva .box{
+            transform: rotateX(30deg);
+        }
+
+        .eixo-z{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid black;
+
+            perspective: 300px;
+        }
+
+        .eixo-z > .box{
+            transform: rotateX(45deg) rotateY(30deg) rotateZ(60deg);
+        }
+
+        .transform-origin{
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+
+            perspective: 300px;
+        }
+
+        .transform-origin .box:nth-child(1):hover{
+            transition: 2s;
+            transform: scale(1.35);
+
+            transform-origin: top right;
+        }
+
+        .transform-origin .box:nth-last-child(1):hover{
+            transition: 2s;
+            transform: rotateY(30deg);
+
+            transform-origin: left top;
+        }
+
+        .transform-style{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+            transform-origin: bottom;
+            transform-style: preserve-3d;
+        }
+
+        .transform-style .box{
+            position: absolute;
+        }
+
+        .transform-style .box:nth-child(1){
+            transform: rotateY(40deg);
+        }
+        .transform-style .box:nth-child(2){
+            background-image: linear-gradient(to right, pink, purple);
+            transform: rotateY(-40deg);
+        }
+    </style>
+    <title>Transformações 3d</title>
+</head>
+<body>
+    <div class="perspectiva">
+        <div class="box"></div>
+    </div>
+
+    <div class="eixo-z">
+        <div class="box"></div>
+    </div>
+
+    <div class="transform-origin">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="transform-style">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
