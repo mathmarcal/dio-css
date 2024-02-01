@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .transicoes{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+            transform-origin: top left;
+            transition: backgroud 1s, transform 1s, transform-origin 3s;
+
+        }
+        .box{
+            width: 100px;
+            padding: 50px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(232, 59, 151);
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem;
+
+        }
+
+        .transicoes .box:hover{
+            animation-name: teste;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes teste{
+            0%{
+                background-color: red;
+                transform: rotateY(20deg);
+            }
+            50%{
+                background-color: blue;
+                transform: rotateY(40deg);
+            }
+            100%{
+                background-color: green;
+                transform: rotateY(50deg);
+            }
+        }
+
+        .animation{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 300px;
+            transform-origin: center;
+        }
+
+        .animation .box{
+            animation-name: exemplo;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes exemplo{
+            0%{
+                background-color: blue;
+            }
+            50%{
+                background-color: purple;
+                transform: rotate(180deg);
+            }
+            100%{
+                background-color: orange;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Animações</title>
+</head>
+<body>
+    <div class="transicoes">
+        <div class="box">Hey!</div>
+    </div>
+
+    <hr>
+
+    <div class="animation">
+        <div class="box">Hey!</div>
+    </div>
+    
+</body>
+</html>
