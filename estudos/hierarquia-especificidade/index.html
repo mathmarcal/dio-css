@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            max-width: 500px;
+            margin: auto;
+        }
+        
+    </style>
+    <title>Hierarquia e Especificidade</title>
+</head>
+<body>
+    <main>
+        <h1>Hierarquia do Efeito Cascata</h1>
+        <p>Estabelece uma prioridade para a aplicação de uma regra e estilo, caso se tenha mais de uma regra para um mesmo seletor CSS</p>
+        <p>Se houver um conflito, o navegador irá: </p>
+        <ol>
+            <li>Analisar todas as regras;</li>
+            <li>Ver o ível de imprtância na origem do elemento;</li>
+            <li>Comparar a especificidade das declarações com mesmo nível de importância (entra o cálculo de especificidade);</li>
+            <li>Em caso de empate dp grau de especificidade, irá olhar a ordem de declaração colocada dentor dos arquivos de código. A regra CSS que for declarada por último, irá ser selecionada;</li>
+        </ol>
+
+        <hr>
+
+        <h2>[Exemplo de hierarquia]</h2>
+
+        <hr>
+
+        <h2>Especificidade</h2>
+
+        <div id="conteudo">
+            <p class="texto">Texto 01</p>
+            <p>Texto 02</p>
+        </div>
+
+        <p>Texto 03</p>
+
+        <hr>
+
+        <h6>cálculo de Especificidade</h6>
+        <ol>
+            <li>Inline: 1000 pontos </li>
+            <li>Id: 100 pontos</li>
+            <li>Classes, pseudo-classes e tributos: 10 pontos</li>
+            <li>Tag HTML: 1 ponto</li>
+        </ol>
+
+        <hr>
+
+        <ul>
+            <li><strong>#exemplo h1.titulo</strong> = 111 pontos</li>
+            <li><strong>a:hover</strong> = 11 pontos</li>
+            <li><strong>div p</strong> = 2 pontos</li>
+        </ul>
+
+        <hr>
+
+        <h2>!important</h2>
+        <p>Nível de prioridade do efeito em cascata: </p>
+
+        <ol>
+            <li>Declarações com !important do usuário; </li>
+            <li>Declarações com !important do desenvolvedor;</li>
+            <li>Folha de estilo do desenvolvedor;
+                <ol>
+                    <li>CSS inline</li>
+                    <li>CSS interno</li>
+                    <li>CSS externo</li>
+                    <li>Folha de estilos padrões do navegador</li>
+                </ol>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h2>Herança | CSS</h2>
+
+        <div class="teste">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil natus accusantium veritatis iusto saepe autem hic odio blanditiis, sint ipsam illum dignissimos explicabo minus enim unde quidem nesciunt a.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dolorem sed temporibus commodi, culpa, eveniet aut eos sequi veniam, distinctio corrupti laboriosam nobis obcaecati. Esse nesciunt veniam at qui tempora?
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>
