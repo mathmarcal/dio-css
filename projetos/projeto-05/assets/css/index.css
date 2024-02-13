@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50% );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient( 90deg, #5516ba, rgba(255, 0, 229, 0.5) 80% );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--primary-color);
+    color: var(--text-color);
+    
+}
+
+/* NAV */
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 16px;
+    background-color: var(--nav-bg-color);
+}
+
+.menu__items a{
+    text-decoration: none;
+    color: var(--text-color);
+
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    letter-spacing: 2px;
+}
+
+.menu .menu__items--button{
+    background-color: var(--tertiary-color);
+    padding: 8px 26px;
+    border-radius: 30px;
+}
+
+.menu img{
+    width: 150px;
+}
+
+/* Header */
+
+.header{
+    padding: 100px 0px 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    position: relative;
+
+    animation-name: gradient__header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient__header {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+
+.header::after{
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, var(--primary-color), transparent);;
+}
+
+.header__content{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    text-align: center;
+}
+
+.header__content--icon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header__title h1{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.header__title .header__title--principal{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.divider{
+    height: 5px;
+    width: 70%;
+    max-width: 700px;
+
+    background: var(--divider-bg-color);
+}
+.offer{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.25rem;
+}
+
+.offer span{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.button{
+    border: none;
+    color: var(--text-color);
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 1s, border 1s, transform 1s;
+}
+.button:hover {
+    background-color: transparent;
+    background-position: 100%;
+    border: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+
+}
+
+
+.header__button{
+    padding: 16px 40px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    animation-name: wiggle;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wiggle {
+    0%{
+        transform: rotate(0deg);
+    }
+    15%{
+        transform: rotate(10deg);
+    }
+    30%{
+        transform: rotate(-10deg);
+    }
+    45%{
+        transform: rotate(10deg);
+    }
+    60%, 100%{
+        transform: rotate(-10deg);
+    }
+    
+}
+
+
+
+.header__title--small{
+    max-width: 320px;
+}
+
+/* Section Plans */
+
+.content__plans{
+    background-image: url(../imagens/background-movies-series.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 24px;
+
+}
+
+.content__plans h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.content__plans--dados{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin: auto;
+    padding: 24px;
+    max-width: 1200px;
+
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.content__cards{
+    min-height: 600px;
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    flex-basis: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.discription__cards--title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.discription__cards--title h3{
+    font-size: 1.25rem;
+}
+.discription__cards--title span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.discription__cards--list li{
+    list-style: none;
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 16px 0px;
+}
+
+.discription__cards--list li::before{
+    content: ' + ';
+    padding-right: 10px;
+}
+
+.content__cards--button{
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 16px 30px;
+}
+
+.content__plans--dados:has(.content__cards:nth-child(2):hover) .content__cards:nth-child(1) {
+    transform: rotateY(45deg);
+    transition: transform 1s;
+}
+.content__plans--dados:has(.content__cards:nth-child(1):hover) .content__cards:nth-child(2) {
+    transform: rotateY(-45deg);
+    transition: transform 1s;
+}
+
+/* Section Films */
+
+.content__films h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.content__films{
+    text-align: center;
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.films{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.films__cards img{
+    max-width: 350px;
+    transition: opacity 2s;
+}
+
+.films__cards{
+    width: 100%;
+    object-fit: cover;
+    object-fit: center;
+    border: 2px solid transparent;
+
+    transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.films__cards:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Cards HBO */
+
+.films__cards:nth-child(1):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(1):hover{
+    background: url(https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/hbo-hover_0.webp) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Cards MAX Originals */
+
+.films__cards:nth-child(2):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(2):hover{
+    background: url(https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/MAX-Hover.webp) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Cards DC */
+
+.films__cards:nth-child(3):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(3):hover{
+    background: url(https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/DC-Hover.webp) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Cards WB */
+
+.films__cards:nth-child(4):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(4):hover{
+    background: url(https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/WB-Hover.webp) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Cards CN */
+
+.films__cards:nth-child(5):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(5):hover{
+    background: url(https://github.com/mathmarcal/hbomax/blob/master/assets/images/CN-Hover.png?raw=true) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Cards UCL */
+
+.films__cards:nth-child(6):hover img{
+    opacity: 0;
+}
+
+.films__cards:nth-child(6):hover{
+    background: url(https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/UCL-Hover.webp) no-repeat;
+    max-width: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+.footer{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.description__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.discription__list--items a{
+    color: var(--link-color);
+}
+.discription__list--items{
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.discription__list--items a:hover{
+    color: var(--text-color);
+    transition: color .8s;
+}
+
+.footer__description p{
+    color: var(--link-color);
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.footer__sociais{
+    margin-top: 80px;
+}
+
+.sociais__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+@media screen and (max-width: 500px) {  
+    .menu{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .content__plans--dados{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .discription__cards--title{
+        gap: 20px;
+    }
+
+    .discription__cards--title span{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .films{
+        grid-template-columns: 1fr;
+    }
+    .films__cards img{
+        width: 250px;
+    }
+    .films__cards:hover{
+        transform: none;
+
+    }
+    .films__cards:nth-child(1):hover{
+        max-width: 300px;
+    }
+    .films__cards:nth-child(2):hover{
+        max-width: 300px;
+    }
+    .films__cards:nth-child(3):hover{
+        max-width: 300px;
+    }
+    .films__cards:nth-child(4):hover{
+        max-width: 300px;
+    }
+    .films__cards:nth-child(5):hover{
+        max-width: 300px;
+    }
+    .films__cards:nth-child(6):hover{
+        max-width: 300px;
+    }
+    
+
+}
+

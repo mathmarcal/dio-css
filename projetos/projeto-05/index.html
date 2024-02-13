@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Clonando Site - HBO Max</title>
 </head>
 <body>
+    <!-- NAV -->
     <nav class="menu">
         <img src="assets/imagens/hbo-logo.svg" alt="Logo HBO Max - Menu">
         <div class="menu__items">
-             <a href="">Entrar</a>
-             <a href="" class="menu__items--button">Assine Agora</a>
+             <a href="signIn.html">Entrar</a>
+             <a href="#plans" class="menu__items--button">Assine Agora</a>
         </div>
     </nav>
 
+    <!-- Header -->
     <header class="header">
         <section class="header__content">
             <div class="header__content--icon">
@@ -37,13 +39,124 @@
                 <p><span>R$14,15</span> /mês*</p>
             </div>
 
-            <a href="#" class="header__button">Assine Agora</a>
+            <button href="#" class="header__button button">Assine Agora</button>
 
             <p class="header__title--small">
                 *aplicável ao plano anual com o pagamento antecipado.
             </p>
         </section>
     </header>
+    <main class="content">
+        <!-- Section Plans -->
+        <section class="content__plans" id="plans">
+            <h2>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
+            <div class="content__plans--dados">
+                <div class="content__cards">
+                    <div class="discription__cards">
+                        <div class="discription__cards--title">
+                            <h3>Mobile</h3>
+                            <p><span>R$ 19,90</span> /mês</p>
+                        </div>
+                        <ul class="discription__cards--list">
+                            <li>Aproveite em smartphones e tablets, onde quiser.</li>
+                            <li>Assista em 1 tela por vez.</li>
+                            <li>Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
+                            <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                        </ul>
+                    </div>
+                    <button class="button content__cards--button">Escolher o plano mobile</button>
+                </div>
+                <div class="content__cards">
+                    <div class="discription__cards">
+                        <div class="discription__cards--title">
+                            <h3>Multitelas</h3>
+                            <p><span>R$ 27,90</span> /mês</p>
+                        </div>
+                        <ul class="discription__cards--list">
+                            <li>Aproveite em todos os seus dispositivos.</li>
+                            <li>Chromecast e Airplay disponíveis.</li>
+                            <li>Assista em até 3 telas ao mesmo tempo.</li>
+                            <li>Tenha conteúdo em alta definição, com qualidade 4K.</li>
+                            <li>Crie até 5 perfis diferentes.</li>
+                        </ul>
+                    </div>
+                    <button class="button content__cards--button">Escolher o plano multitelas</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    
+        <!-- Section Films -->
+        <section class="content__films">
+            <h2>Descubra novos universos</h2>
+            <div class="films">
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/hbo-default_0.webp"
+                        alt="Imagem do Filme ">
+                </div>
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/MAX-Default.webp"
+                        alt="">
+                </div>
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/DC_Default.webp"
+                        alt="">
+                </div>
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/WB-Default.webp"
+                        alt="">
+                </div>
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/CN-Default.webp"
+                        alt="">
+                </div>
+                <div class="films__cards">
+                    <img src="https://raw.githubusercontent.com/mathmarcal/hbomax/master/assets/images/UCL-Default.webp"
+                        alt="">
+                </div>
+            </div>
+    
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__description">
+            <ul class="description__list">
+                <li class="discription__list--items"><a href="#">Agora na HBO Max</a></li>
+                <li class="discription__list--items"><a href="#">Em breve</a></li>
+                <li class="discription__list--items"><a href="#">Filmes em destaque</a></li>
+                <li class="discription__list--items"><a href="#">Séries</a></li>
+                <li class="discription__list--items"><a href="#">Ajuda</a></li>
+            </ul>
+            <p>© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
+    
+        </div>
+    
+        <div class="footer__sociais">
+            <ul class="sociais__list">
+                <li class="sociais__list--items">
+                    <a href="https://web.facebook.com/HBOMaxBr/?_rdc=1&_rdr" target="_blank">
+                        <img src="assets/imagens/fb_0.png" alt="Facebook HBO">
+                    </a>
+                </li>
+                <li class="sociais__list--items">
+                    <a href="https://twitter.com/HBOMaxBR" target="_blank">
+                        <img src="assets/imagens/twitter_0.png" alt="Twitter HBO">
+                    </a>
+                </li>
+                <li class="sociais__list--items">
+                    <a href="https://www.instagram.com/hbomaxbr/" target="_blank">
+                        <img src="assets/imagens/instagram_0.png" alt="Instagram HBO">
+                    </a>
+                </li>
+                <li class="sociais__list--items">
+                    <a href="https://www.youtube.com/c/hbomaxbr" target="_blank">
+                        <img src="assets/imagens/youtube_0.png" alt="Youtube HBO">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     
 </body>
 </html>
