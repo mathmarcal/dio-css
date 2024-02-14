@@ -41,6 +41,12 @@ body{
     background-color: var(--nav-bg-color);
 }
 
+.menu__items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .menu__items a{
     text-decoration: none;
     color: var(--text-color);
@@ -111,6 +117,7 @@ body{
 .header__content--icon{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -307,6 +314,7 @@ body{
 .films{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 30px;
 
     margin-top: 40px;
@@ -337,6 +345,7 @@ body{
 
 .films__cards:nth-child(1):hover img{
     opacity: 0;
+    text-align: center;
 }
 
 .films__cards:nth-child(1):hover{
@@ -481,12 +490,28 @@ body{
         align-items: center;
         gap: 24px;
     }
+    .content__cards{
+        padding: 20px 30px;
+    }
     .discription__cards--title{
         gap: 20px;
     }
 
-    .discription__cards--title span{
-        font-size: 1.2rem;
+    .content__plans--dados:has(.content__cards:nth-child(2):hover) .content__cards:nth-child(1) {
+        transform: none;
+    }
+    .content__plans--dados:has(.content__cards:nth-child(1):hover) .content__cards:nth-child(2) {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .films{
+        grid-template-columns: 1fr 1fr;
+    }    
+    .content__plans--dados{
+        flex-direction: column;
+        padding: 20px 40px;
     }
 }
 
@@ -494,32 +519,8 @@ body{
     .films{
         grid-template-columns: 1fr;
     }
-    .films__cards img{
-        width: 250px;
-    }
     .films__cards:hover{
         transform: none;
-
     }
-    .films__cards:nth-child(1):hover{
-        max-width: 300px;
-    }
-    .films__cards:nth-child(2):hover{
-        max-width: 300px;
-    }
-    .films__cards:nth-child(3):hover{
-        max-width: 300px;
-    }
-    .films__cards:nth-child(4):hover{
-        max-width: 300px;
-    }
-    .films__cards:nth-child(5):hover{
-        max-width: 300px;
-    }
-    .films__cards:nth-child(6):hover{
-        max-width: 300px;
-    }
-    
-
 }
 
